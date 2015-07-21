@@ -6,8 +6,8 @@ class Vamp < Formula
   sha256 "cfd1620cb48247e891292d48424a20c5f59bac6a6651ddafba74b7dbe6cedd2f"
 
   def install
-      inreplace "brew/vamp", "##PREFIX##", "#{prefix}"
-      prefix.install "vamp-cli-0.7.8-brew.zip"
-      bin.install "brew/vamp"
+      inreplace "vamp-cli-0.7.8.2/brew/vamp", "##PREFIX##", "#{prefix}"
+      prefix.install "vamp-cli-0.7.8.2/vamp-cli-0.7.8-brew.zip"
+      bin.install "vamp-cli-0.7.8.2/brew/vamp"
   end
 end
