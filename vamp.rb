@@ -9,7 +9,7 @@ class Vamp < Formula
   
   def install
       inreplace "vamp-cli-#{version}/brew/vamp", "##PREFIX##", "#{prefix}"
-      prefix.install "vamp-#{version}/lib/vamp-cli.jar"
+      prefix.install "vamp-cli-#{version}/lib/vamp-cli.jar"
       bin.install "vamp-cli-#{version}/brew/vamp"
   end
 end
